@@ -1,0 +1,41 @@
+var _path, _path2, _path3;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgEarnIcon(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 48,
+    height: 48,
+    viewBox: "0 0 48 48",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M4 22L9.614 15.686C10.3646 14.8414 11.2855 14.1653 12.3162 13.7023C13.347 13.2394 14.4641 13 15.594 13H16M4 39H15L23 33C23 33 24.62 31.906 27 30C32 26 27 19.668 22 23C17.928 25.714 14 28 14 28",
+    stroke: "white",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M16 27V14C16 12.9391 16.4214 11.9217 17.1716 11.1716C17.9217 10.4214 18.9391 10 20 10H40C41.0609 10 42.0783 10.4214 42.8284 11.1716C43.5786 11.9217 44 12.9391 44 14V26C44 27.0609 43.5786 28.0783 42.8284 28.8284C42.0783 29.5786 41.0609 30 40 30H27",
+    stroke: "white",
+    strokeWidth: 2
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    d: "M39 20.02L39.02 19.998M21 20.02L21.02 19.998M30 24C28.9391 24 27.9217 23.5786 27.1716 22.8284C26.4214 22.0783 26 21.0609 26 20C26 18.9391 26.4214 17.9217 27.1716 17.1716C27.9217 16.4214 28.9391 16 30 16C31.0609 16 32.0783 16.4214 32.8284 17.1716C33.5786 17.9217 34 18.9391 34 20C34 21.0609 33.5786 22.0783 32.8284 22.8284C32.0783 23.5786 31.0609 24 30 24Z",
+    stroke: "white",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgEarnIcon);
+export default __webpack_public_path__ + "static/media/earnIcon.253237048d3c3b058bb9e4ff7a438769.svg";
+export { ForwardRef as ReactComponent };

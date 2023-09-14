@@ -1,0 +1,37 @@
+var _path, _path2;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgEnjoyIcon(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 48,
+    height: 48,
+    viewBox: "0 0 48 48",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M28.544 20.89L36 4M18.632 21.264L10 4M25.522 20.096L17.67 4M28.72 4L26.64 9M12 32C12 35.1826 13.2643 38.2348 15.5147 40.4853C17.7652 42.7357 20.8174 44 24 44C27.1826 44 30.2348 42.7357 32.4853 40.4853C34.7357 38.2348 36 35.1826 36 32C36 28.8174 34.7357 25.7652 32.4853 23.5147C30.2348 21.2643 27.1826 20 24 20C20.8174 20 17.7652 21.2643 15.5147 23.5147C13.2643 25.7652 12 28.8174 12 32Z",
+    stroke: "white",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M21 30L25 27V37",
+    stroke: "white",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgEnjoyIcon);
+export default __webpack_public_path__ + "static/media/enjoyIcon.a9a0e7cd075de4aae917fe5a696f78bf.svg";
+export { ForwardRef as ReactComponent };

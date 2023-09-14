@@ -1,0 +1,334 @@
+.Vision {
+    &__first {
+        height: fit-content;
+        background: linear-gradient(333.69deg, #200305de 15.84%, #353b42e6 90.46%), url('../../assets/technology_gradient.png');
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 592px;
+        }
+
+       h1 {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 68px;
+        /* identical to box height, or 121% */
+       
+        text-align: center;
+
+        color: #FFFFFF;
+        margin-top: 96px;
+        max-width: 1000px;
+
+        @media (max-width: 768px) {
+            font-family: Raleway;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: center;
+            margin-top: 48px;
+
+        }
+       }
+
+       p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        /* or 156% */
+
+        text-align: center;
+
+        color: #FFFFFF;
+
+        opacity: 0.75;
+        margin-top: 16px;
+        max-width: 800px;
+
+       }
+    }
+
+    &__second {
+        background: #fff;
+
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 56px;
+            max-width: 800px;
+            /* or 133% */
+
+            text-align: center;
+
+            color: #1E2022;
+            margin-top: 96px;
+
+            @media (max-width: 768px) {
+                font-family: Raleway;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 36px;
+                letter-spacing: 0em;
+                text-align: center;
+                margin-top: 48px;
+    
+            }
+        }
+
+        img {
+            @media (max-width: 768px) {
+                width: 100%;
+    
+            }
+        }
+
+        &--content {
+            display: flex;
+            margin-top: 64px;
+            margin-bottom: 80px;
+
+            @media (max-width: 768px) {
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+    
+            }
+
+            &__text {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+        
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 28px;
+                    /* or 187% */
+                    color: #444444;
+                    max-width: 582px;
+                    text-align: left;
+
+                    &.secondItem {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__third {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width: 768px) {
+                width: fit-content;
+            }
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 56px;
+            /* identical to box height, or 133% */
+
+            text-align: center;
+
+            color: #1E2022;
+            margin-top: 96px;
+
+            @media (max-width: 768px) {
+                font-family: Raleway;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 36px;
+                letter-spacing: 0em;
+                text-align: center;
+                margin-top: 48px;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            margin-bottom: 36px;
+            /* or 187% */
+
+            text-align: center;
+
+            color: #444444;
+            max-width: 808px;
+
+            @media (max-width: 768px) {
+               max-width: 90%;
+            }
+
+        }
+
+        .notation {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            /* or 156% */
+
+            text-align: center;
+
+            color: #444444;
+            max-width: 808px;
+            margin: 80px 0;
+
+            @media (max-width: 768px) {
+                font-size: 15px;
+                max-width: 90%;
+             }
+        }
+
+        .mobile {
+            .Vision__third--content__left {
+                width: 70%;
+            }
+
+            &.Vision__third--content {
+                width: 100%;
+                justify-content: flex-start;
+            }
+
+            .right {
+                margin-bottom: 18px !important;
+            }
+        }
+
+        &--content {
+            display: flex;
+            width: inherit;
+            justify-content: center;
+
+            &__left {
+                width: 40%;
+            }
+
+            &__center {
+                width: 71px;
+                display: flex;
+                justify-content: center;
+                z-index: -1;
+
+                .line {
+                    height: 100%;
+                    width: 3px;
+                    background-color: #E5E5EB;;
+                }
+            }
+
+            &__right {
+                width: 40%;
+            }
+        }
+
+        .roadmapItem {
+            max-width: 572px;
+            background: #fff;
+            box-shadow: 0px 18.4403px 36.8807px rgba(0, 0, 0, 0.06);
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 16px 24px;
+            position: relative;
+
+            &__label {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 20px;
+                /* identical to box height, or 167% */
+                color: #fff;
+
+                text-align: right;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                padding: 2px 8px;
+                background: #EB3340;
+                border-radius: 16px;
+                /* white */
+            }
+
+            &.left {
+                text-align: right;
+                align-items: flex-end;
+                margin-top: 118px;
+
+                &::after {
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    position: absolute;
+                    top: 16px;
+                    right: -47px;
+                    background:  #EB3340;
+                    border-radius: 100%;
+                    border: 5px solid #FFFFFF;
+                    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+                }
+            }
+
+            &.right {
+                text-align: left;
+                align-items: flex-start;
+                margin-bottom: 118px;
+
+                &::before {
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    position: absolute;
+                    top: 16px;
+                    left: -47px;
+                    background:  #EB3340;
+                    border-radius: 100%;
+                    border: 5px solid #FFFFFF;
+                    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+                }
+            }
+
+            &__text {
+                padding-top: 10px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+                /* identical to box height, or 156% */                
+                /* Basic/Basic-1000 */
+                
+                color: #1E2022;
+            }
+        }
+    }
+}
